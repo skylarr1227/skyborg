@@ -7,8 +7,7 @@ from utils import permissions, default
 
 config = default.get("config.json")
 description = """
-A simple starter bot code
-Made by AlexFlipnote
+The result of Skybot breaking free from RedBOT
 """
 
 
@@ -43,10 +42,15 @@ class HelpFormat(DefaultHelpCommand):
             destination = self.get_destination(no_pm=True)
             await destination.send("Couldn't send help to you due to blocked DMs...")
 
-
+print('Logged in as')
+print(bot.user.name)
+print(bot.user.id)
+print('------')
+print(discord.utils.oauth_url(bot.user.id))
 print("Logging in...")
 bot = Bot(command_prefix=config.prefix, prefix=config.prefix, command_attrs=dict(hidden=True), help_command=HelpFormat())
 
+   
 for file in os.listdir("cogs"):
     if file.endswith(".py"):
         name = file[:-3]
