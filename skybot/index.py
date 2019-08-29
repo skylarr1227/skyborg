@@ -43,10 +43,10 @@ class HelpFormat(DefaultHelpCommand):
             await destination.send("Couldn't send help to you due to blocked DMs...")
 
 print('Logged in as')
-print(bot.user.name)
-print(bot.user.id)
+print(Bot.user.name)
+print(Bot.user.id)
 print('------')
-print(discord.utils.oauth_url(bot.user.id))
+print(discord.utils.oauth_url(Bot.user.id))
 print("Logging in...")
 bot = Bot(command_prefix=config.prefix, prefix=config.prefix, command_attrs=dict(hidden=True), help_command=HelpFormat())
 
