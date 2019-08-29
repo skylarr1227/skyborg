@@ -62,7 +62,7 @@ class Information(commands.Cog):
         embed.add_field(name="Commands loaded", value=len([x.name for x in self.bot.commands]), inline=True)
         embed.add_field(name="RAM", value=f"{ramUsage:.2f} MB", inline=True)
 
-        await ctx.send(content=f"ℹ About **{ctx.bot.user}**, embed=embed)
+        await ctx.send(content=f"ℹ About **{ctx.bot.user}**", embed=embed)
 
 
 def setup(bot):
