@@ -32,11 +32,11 @@ class Information(commands.Cog):
         """ Check it out❗❗"""
         await ctx.send(f"**{ctx.bot.user}** is powered by the shattered remains of Redbot after the epic battle with Skybot")
 
-    #@commands.command(aliases=['supportserver', 'feedbackserver'])
-    #async def botserver(self, ctx):
-    #    """ Get an invite to our support server! """
-    #    if isinstance(ctx.channel, discord.DMChannel) or ctx.guild.id != 86484642730885120:
-    #        return await ctx.send(f"**Here you go {ctx.author.name}")
+    @commands.command(aliases=['supportserver', 'feedbackserver'])
+    async def botserver(self, ctx):
+        """ Get an invite to our support server! """
+        if isinstance(ctx.channel, discord.DMChannel) or ctx.guild.id != 591691796824719390:
+            return await ctx.send(f"**Here you go {ctx.author.name}")
 
      #   await ctx.send(f"**{ctx.author.name}** this is my home you know :3")
 
@@ -62,7 +62,7 @@ class Information(commands.Cog):
         embed.add_field(name="Commands loaded", value=len([x.name for x in self.bot.commands]), inline=True)
         embed.add_field(name="RAM", value=f"{ramUsage:.2f} MB", inline=True)
 
-        await ctx.send(content=f"ℹ About **{ctx.bot.user}** | **{repo.version}**", embed=embed)
+        await ctx.send(content=f"ℹ About **{ctx.bot.user}**, embed=embed)
 
 
 def setup(bot):
