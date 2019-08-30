@@ -9,7 +9,7 @@ config = default.get("config.json")
 description = """
 The result of Skybot breaking free from RedBOT
 """
-bot.remove_command('help')
+
 
 class HelpFormat(DefaultHelpCommand):
     def get_destination(self, no_pm: bool = False):
