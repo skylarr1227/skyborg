@@ -1,7 +1,7 @@
 import os
 import discord
 
-from discord.ext.commands 
+from discord.ext import commands 
 from data import Bot
 from utils import permissions, default
 
