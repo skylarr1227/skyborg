@@ -18,11 +18,11 @@ async def help(self, ctx, * cog):
 " Gets all cogs and commands of mine. "
 ""
 try:
-if not cog:
+    if not cog:
     halp = discord.Embed(title = ' Cog Listing and Uncatergorized Commands ',
     description = ' Use `!help *cog*` to find out more about them!  \n (BTW, the Cog Name Must Be in Title Case, Just Like this Sentence.) ')
     cogs_desc = ' '
-for x in self.bot.cogs:
+    for x in self.bot.cogs:
     cogs_desc += (' {} - {} '.format(x, self.bot.cogs[x].__doc__) + ' \n ')
     halp.add_field(name = ' Cogs ', value = cogs_desc[0: len(cogs_desc) - 1], inline = False)
     cmds_desc = ' '
