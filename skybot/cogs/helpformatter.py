@@ -50,8 +50,8 @@ if not found:
 else :
     await ctx.message.add_reaction(emoji = ' ✉ ')
 await ctx.message.author.send(' ', embed = halp)
-except:
-    pass
+    except:
+        pass
 
 def setup(bot):
     bot.add_cog(Help(bot))
