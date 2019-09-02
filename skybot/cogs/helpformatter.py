@@ -33,17 +33,17 @@ try:
             await ctx.message.add_reaction(emoji = ' ✉ ')
             await ctx.message.author.send(' ', embed = halp)
     else :
-    if len(cog) > 1:
-        halp = discord.Embed(title = ' Error! ', description = ' That is way too many cogs! ', color = discord.Color.red())
-        await ctx.message.author.send(' ', embed = halp)
+        if len(cog) > 1:
+            alp = discord.Embed(title = ' Error! ', description = ' That is way too many cogs! ', color = discord.Color.red())
+            await ctx.message.author.send(' ', embed = halp)
     else :
         found = False
-    for x in self.bot.cogs:
-    for y in cog:
-    if x == y:
+        for x in self.bot.cogs:
+        for y in cog:
+        if x == y:
         halp = discord.Embed(title = cog[0] + ' Command Listing ', description = self.bot.cogs[cog[0]].__doc__)
-    for c in self.bot.get_cog(y).get_commands():
-    if not c.hidden:
+        for c in self.bot.get_cog(y).get_commands():
+        if not c.hidden:
         halp.add_field(name = c.name, value = c.help, inline = False)
         found = True
     if not found:
