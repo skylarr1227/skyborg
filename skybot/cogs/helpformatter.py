@@ -27,7 +27,7 @@ try:
         halp.add_field(name = ' Cogs ', value = cogs_desc[0: len(cogs_desc) - 1], inline = False)
         cmds_desc = ' '
     for y in self.bot.walk_commands():
-    if not y.cog_name and not y.hidden:
+        if not y.cog_name and not y.hidden:
         cmds_desc += (' {} - {} '.format(y.name, y.help) + ' \n ')
         halp.add_field(name = ' Uncatergorized Commands ', value = cmds_desc[0: len(cmds_desc) - 1], inline = False)
         await ctx.message.add_reaction(emoji = ' ✉ ')
