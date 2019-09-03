@@ -45,8 +45,7 @@ class HelpFormat(DefaultHelpCommand):
 print('Logged in as')
 print("Logging in...")
 bot = Bot(command_prefix=config.prefix, prefix=config.prefix, command_attrs=dict(hidden=True), help_command=HelpFormat())
-#help_command=HelpFormat())
-#bot.remove_command('help')
+bot.remove_command('help')
    
 for file in os.listdir("cogs"):
     if file.endswith(".py"):
