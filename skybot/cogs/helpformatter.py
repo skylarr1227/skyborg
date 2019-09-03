@@ -47,8 +47,8 @@ try:
         halp.add_field(name = c.name, value = c.help, inline = False)
         found = True
         pass
-    if not found:
-         halp = discord.Embed(title = ' Error! ', description = ' How do you even use " ' + cog[0] + ' "? ', color = discord.Color.red())
+        if not found:
+        halp = discord.Embed(title = ' Error! ', description = ' How do you even use " ' + cog[0] + ' "? ', color = discord.Color.red())
     else:
         await ctx.message.add_reaction(emoji = ' âœ‰ ')
         wait ctx.message.author.send(' ', embed = halp)
