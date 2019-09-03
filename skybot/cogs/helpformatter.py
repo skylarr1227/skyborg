@@ -49,9 +49,9 @@ try:
         pass
         if not found:
         halp = discord.Embed(title = ' Error! ', description = ' How do you even use " ' + cog[0] + ' "? ', color = discord.Color.red())
-    else:
-        await ctx.message.add_reaction(emoji = ' âœ‰ ')
-        wait ctx.message.author.send(' ', embed = halp)
+        else:
+            await ctx.message.add_reaction(emoji = ' âœ‰ ')
+            wait ctx.message.author.send(' ', embed = halp)
     except:
     pass
 
