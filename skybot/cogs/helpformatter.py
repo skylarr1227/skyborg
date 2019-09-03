@@ -7,6 +7,9 @@ from discord.ext import commands
 from io import BytesIO
 from utils import repo, default, http, dataIO
 
+print('Help Formatting completed')
+print("Loaded successfully")
+
 class Help(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -53,8 +56,7 @@ try:
         wait ctx.message.author.send(' ', embed = halp)
     except:
     pass
-print('Help Formatting completed')
-print("Loaded successfully")
+
 
     def setup(bot):
         bot.add_cog(Help(bot))
