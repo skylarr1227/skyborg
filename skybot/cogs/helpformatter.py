@@ -53,6 +53,8 @@ try:
         wait ctx.message.author.send(' ', embed = halp)
     except:
     pass
+print('Help Formatting completed')
+print("Loaded successfully")
 
     def setup(bot):
         bot.add_cog(Help(bot))
