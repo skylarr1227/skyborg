@@ -54,6 +54,6 @@ try:
  #           wait ctx.message.author.send(' ', embed = halp)
    # except:
  #   pass
-
+       return
     def setup(bot):
         bot.add_cog(Help(bot))
