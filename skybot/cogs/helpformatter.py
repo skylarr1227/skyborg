@@ -52,8 +52,8 @@ try:
  #       else:
  #           await ctx.message.add_reaction(emoji = ' âœ‰ ')
  #           wait ctx.message.author.send(' ', embed = halp)
-    except:
-    pass
+   # except:
+ #   pass
 
     def setup(bot):
         bot.add_cog(Help(bot))
