@@ -27,7 +27,7 @@ class HelpFormat(DefaultHelpCommand):
         self.paginator.close_page()
         await self.send_pages(no_pm=True)
 
-    async def send_pages(self, no_pm: bool = True):
+    async def send_pages(self, no_pm: bool = False):
         try:
             if permissions.can_react(self.context):
                 await self.context.message.add_reaction(chr(0x2709))
@@ -44,7 +44,7 @@ class HelpFormat(DefaultHelpCommand):
 
 print('Logged in as')
 print("Logging in...")
-bot = Bot(command_prefix=config.prefix, prefix=config.prefix, command_attrs=dict(hidden=True)) 
+bot = Bot(command_prefix=config.prefix, prefix=config.prefix, command_attrs=dict(hidden=True)), help_command=HelpFormat())
 #help_command=HelpFormat())
 #bot.remove_command('help')
    
