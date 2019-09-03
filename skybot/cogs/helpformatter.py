@@ -7,9 +7,6 @@ from discord.ext import commands
 from io import BytesIO
 from utils import repo, default, http, dataIO
 
-print('Help Formatting completed')
-print("Loaded successfully")
-
 class Help(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
