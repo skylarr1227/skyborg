@@ -24,7 +24,7 @@ class CommandErrorHandler(commands.Cog):
         self.bot = bot
     
     @commands.Cog.listener()
-    async def on_command_error(self, ctx, error):
+    async def on_command_error(self, error, ctx):
         """The event triggered when an error is raised while invoking a command.
         ctx   : Context
         error : Exception"""
@@ -70,7 +70,7 @@ class CommandErrorHandler(commands.Cog):
         await ctx.send(inp)
 
     @do_repeat.error
-    async def do_repeat_handler(self, ctx, error):
+    async def do_repeat_handler(self, error, ctx):
         """A local Error Handler for our command do_repeat.
         This will only listen for errors in do_repeat.
         The global on_command_error will still be invoked after."""
