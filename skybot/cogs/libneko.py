@@ -9,7 +9,7 @@ with open('dummy-text.txt') as fp:
 #class Libneko(commands.Cog)
 #def __init__(self)
     
-    @bot.command()
+    @commands.command()
     async def test(ctx):
     """We will be coding in here in the next part."""
     nav = pag.StringNavigatorFactory(max_lines=10)
