@@ -8,7 +8,7 @@ with open('dummy-text.txt') as fp:
     dummy_text = fp.read()
 
 class Libneko(commands.Cog):
-    def __init__(self)
+    #def __init__(self)
     
     @commands.command()
     async def test(ctx):
