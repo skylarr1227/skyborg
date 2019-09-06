@@ -6,8 +6,8 @@ from libneko import pag
 with open('dummy-text.txt') as fp:
     dummy_text = fp.read()
 
-class Libneko(commands.Cog)
-def __init__(self)
+#class Libneko(commands.Cog)
+#def __init__(self)
     
     @bot.command()
     async def test(ctx):
