@@ -9,7 +9,6 @@ class Libneko(commands.Cog):
     #def __init__(self)
     
     @commands.command()
-    @read()
     async def test(ctx):
         try:
             with open('dummy-text.txt') as fp:
