@@ -1,4 +1,5 @@
 import discord
+import libneko
 from discord.ext import commands
 from libneko import pag
 
