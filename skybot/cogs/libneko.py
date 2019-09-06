@@ -4,9 +4,11 @@ from discord.ext import commands
 from libneko import pag
 
 # Read the dummy text in.
-with open('dummy-text.txt') as fp:
-    dummy_text = fp.read()
-
+try:
+    with open('dummy-text.txt') as fp:
+        dummy_text = fp.read()
+except:
+    await ctx.send("Could not read")
 class Libneko(commands.Cog):
     #def __init__(self)
     
