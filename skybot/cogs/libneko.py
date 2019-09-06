@@ -11,13 +11,13 @@ with open('dummy-text.txt') as fp:
     
     @commands.command()
     async def test(ctx):
-    """We will be coding in here in the next part."""
-    nav = pag.StringNavigatorFactory(max_lines=10)
+        """We will be coding in here in the next part."""
+        nav = pag.StringNavigatorFactory(max_lines=10)
 
-    # Insert the dummy text into our factory.
-    nav += dummy_text
+        # Insert the dummy text into our factory.
+        nav += dummy_text
 
-    nav.start(ctx)
+        nav.start(ctx)
 
 def setup(bot):
     bot.add_cog(Libneko(bot))
